@@ -1,0 +1,22 @@
+{
+  "author": "Martez Reed",
+  "checksums": {
+    "manifests\\init.pp": "e9727d53a4b4e0dbc21c68fafdebe640",
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "spec\\spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "tests\\init.pp": "720774a2df5e09856554a409e4294d85",
+    "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "Modulefile": "e20657204eaa4eb6df8fb045e7282cd5",
+    "templates\\deploymentserver.erb": "fff161c16b68843b8d866a74470df76a",
+    "README.markdown": "60cf91bc401e6a9ef8bc2f75da60c3a6"
+  },
+  "dependencies": [],
+  "description": "Puppet module to install and configure Splunk Universal Forwarder",
+  "license": "Apache License, Version 2.0",
+  "name": "martezr-splunkforwarder",
+  "project_page": "https://github.com/martezr/puppet-splunkforwarder",
+  "source": "https://github.com/martezr/puppet-splunkforwarder.git",
+  "summary": "Puppet module to install and configure Splunk Universal Forwarder",
+  "types": [],
+  "version": "0.1.0"
+}
