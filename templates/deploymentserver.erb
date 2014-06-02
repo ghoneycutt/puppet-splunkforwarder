@@ -1,3 +1,2 @@
-<%# /etc/puppetlabs/puppet/modules/splunkforwarder/templates/deploymentserver.erb %>
 [target-broker:deploymentServer]
-targetUri = <%= scope.lookupvar('splunkforwarder::deployment_server') %>:<%= scope.lookupvar('splunkforwarder::deployment_server_port') %>
+targetUri = <%= @deployment_server %>:<%= @deployment_server_port %>
