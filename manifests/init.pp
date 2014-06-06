@@ -3,7 +3,7 @@
 # This module manages splunkforwarder
 #
 class splunkforwarder (
-  $install_source          = 'C:\Temp\splunk.msi', # somethign similar to that
+  $install_source          = 'C:\Temp\splunkforwarder.msi',
   $deployment_server       = "splunk.${::domain}",
   $deployment_server_port  = '9997',
 ) {
