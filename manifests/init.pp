@@ -5,7 +5,7 @@
 class splunkforwarder (
   $install_source          = 'C:\Temp\splunkforwarder.msi',
   $deployment_server       = "splunk.${::domain}",
-  $deployment_server_port  = '9997',
+  $deployment_server_port  = '8089',
 ) {
 
   package { 'universalforwarder':
