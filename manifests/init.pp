@@ -12,7 +12,7 @@ class splunkforwarder (
     source          => $install_source,
     install_options => {
       'AGREETOLICENSE'    => 'Yes',
-      'DEPLOYMENT_SERVER' => "${::deployment_server}:${::deployment_server_port}",
+      'DEPLOYMENT_SERVER' => "${deployment_server}:${deployment_server_port}",
       'LAUNCHSPLUNK'      => '1',
       'SERVICESTARTTYPE'  => 'auto',
     }
@@ -32,16 +32,4 @@ class splunkforwarder (
     enable  => true,
     require => Package['universalforwarder'],
   }
-
-#file_line { 'sudo_rule':
-#  path => 'C:\Program Files\SplunkUniversalForwarder\etc\system\local\inputs',
-#  line => 'host = $fqdn',
-#}
-#ini_setting { 'sample setting':
-#  ensure  => present,
-#  path    => 'C:\\Program Files\\SplunkUniversalForwarder\\etc\\system\\local\\inputs.conf',
-#  section => 'default',
-#  setting => 'host',
-#  value   => $fqdn,
-#}
 }
